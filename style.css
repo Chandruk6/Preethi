@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&family=Bona+Nova:ital@0;1&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;500&family=Roboto&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --red-color:#ff0000;
+    --black-color:#000000;
+    --gray-color:#808080;
+    --white-color:#ffffff;
+    --black1-color:#242323;
+    --black3-color:#363636;
+    --yellow-color: #ffd900;
+    --lite-color:#c42d2d;
+}
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+}
+.text1, .benifit1{
+font-family: 'Playfair Display', serif;
+    }
+    .text2,.footer h5 , .footer h6 , .footer h4{
+        font-family: 'Bitter', serif;
+font-family: 'Bona Nova', serif;
+    }
+    .text3{
+        font-family: 'Bona Nova', serif;
+    }
+    .h4{
+        font-family: 'Satisfy', cursive;
+    }
+.nav-link:hover{
+    background-color:var(--red-color);
+    color: var(--white-color);
+    border-radius: 20px;   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);    
+}
+.btn {
+   color:var(--white-color);
+}
+.mix .btn{
+    color: var(--black-color);
+}
+.btn:hover{
+    background-color:var(--red-color);
+    color: var(--white-color);
+}
+.mix .btn:hover{
+    
+    background-color:var(--black1-color);
+    color: var(--white-color);
+}
+.bordermix{
+    border-bottom: 4px solid #111111;
+}
+.msimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.card-1 .card{
+    background: url('image/background.png'),repeat-x , var(--white-color);
+    background-position: center;
+}
+.c-img img{
+    width: 50%;
+}
+.c2-img img{
+    width: 80%;
+}
+.c1-img img{
+    width: 30%;
+}
+.font{
+    font-size:12px;
+}
+.rotated{
+    position: relative;  
+}
+.rotated .rotate img{
+    position: absolute;
+    left:-250px;
+   top: 10%;
+}
+.rotated:hover .rotate img{
+    transform: rotate(360deg);
+    transition: 0.4s ease;
+}
+.btn:hover{
+color: var(--white-color);
+}
+.stars{
+    color: var(--yellow-color);
+}
+.benifit{
+    display: flex;
+}
+.benifit1{
+    display: flex;
+}
+.benifit1 img{
+    width: 50%;
+}
+.icon i{
+    background-color: var(--white-color);
+     color: var(--black3-color);
+     border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55px;height: 55px;
+     font-size: 20px;
+}
+.change{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email{
+    color: var(--white-color);
+    width: 100%;
+    max-width: 320px;
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid var(--white-color);
+    padding: 0.2em 0;
+    margin: 1em 0;
+    outline: 0;
+    font-size: 1em;
+
+}
+.email:focus{
+    outline: none;
+}
+.f-row{
+    border-bottom: 2px solid var(--white-color);   
+}
+.footer{
+    background-color: var(--black-color);
+    height:50vh;
+}
+.cooker .card{
+    height: 22rem;
+}
+.Promotion .card img , .Accessories .card img , .categories .card img{
+    width: 60%;
+}
+header{
+    position: relative;
+}
+
+.method-drop{
+    cursor: pointer;
+    z-index:1;
+    display: none;
+    position: absolute;
+    top:11%;
+    position: fixed;
+    transition:0.8s ease-in-out;
+}
+.section-pad{
+    padding: 0 100px;
+}
+.chimney-circle{
+    position: relative;
+}
+.colorWheel small {
+    width: 180%;
+    height: 150%;
+    border: 8em solid;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transform: translate(-37%,-60%)
+}
+
+
+
+.productParticles {
+    top: 0%;
+    bottom: 0%;
+    margin-top: 0;
+    right: auto;
+    width: 50%;
+    position: absolute;
+    left: -25px
+}
+
+.productParticles .colorWheel {
+      z-index: -1;
+    color: var(--white-color);
+    position: relative;
+    display: block;
+    -webkit-mask-image: linear-gradient(270deg,rgba(255,255,255,0) 2%,var(--white-color) 85%);
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(260deg,rgba(255,255,255,0) 0,va(--white-color) 85%);
+    transition: color 1s
+}
+
+.colorWheel:before {
+    content: '';
+    display: block;
+    padding-bottom: 100%
+}
+
+
+
+
+  
+@media (max-width:768px){
+    .benifit ,.benifit1{
+        display: inline-table;
+    }
+    
+    .benifit1 img{
+        width: 20%;
+    }
+    
+    .footer{
+        height:140vh;
+    }
+    .cooker .card{
+        height: 19rem;
+    }
+    .Promotion .card img,.Accessories .card img,.categories .card img{
+        width: 40%;
+    }
+    .method-drop{
+        z-index:-1;
+        display: none;
+    }
+    .c-img img , .c1-img img{
+        width: 30%;
+    }
+    .c2-img img{
+        width: 40%;
+    }
+    .icon i{
+        background-color: var(--white-color);
+         color: #363636;
+         border-radius: 50%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 30px;height:30px;
+         font-size: 13px;
+    }
+    .colorWheel small {
+        width: 200%;
+        height: 200%;
+        border: 8em solid;
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+        transform: translate(-7%,-60%)
+    }
+    
+    
+    
+    .productParticles {
+        top: 0%;
+        bottom: 0%;
+        margin-top: 0;
+        right: auto;
+        width: 90%;
+        position: absolute;
+        left: -25px
+    }
+    .box{
+        padding-left: 15%;
+    }
+    #mixe-img .card ,#gas-img .card, #cooker .card{
+        margin-top: 10%;
+    }
+    #cooker p{
+        font-size: 13px;
+    }
+   
+}
+
+
+
+
